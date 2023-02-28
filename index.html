@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".//reset.css">
+</head>
+<body>
+    <div class="left-side">
+        <img class="logo-img" src=".//images/logo.svg" alt="">
+        <div class="login-box">
+            <div class="login-title">
+                <div class="title">
+                    <img class="title-img" src=".//images/log-in.svg" alt="">
+                    <h2>Faça seu login</h2>
+                </div>
+                <p>Entre com suas informações de cadastro.</p>
+            </div>
+            <div class="login-inputs">
+                <form action="POST">
+                    <label for="email-input">E-mail</label>
+                    <input type="email" name="email-input" id="email-input" placeholder="Digite seu e-mail">
+                    <label for="password-input">Senha</label>
+                    <input type="password" name="password-input" id="password-input" placeholder="Digite sua senha">
+                </form>
+            </div>
+            <div class="login-checks">
+                <p><input type="checkbox" class="reminder-check" id="reminder-check">Lembre-me</p>
+                <p><a href="#">Esqueci minha senha</a></p>
+            </div>
+            <div class="login-buttons">
+                <button class="button" type="submit">entrar</button>    
+                <p>Não tem uma conta? <a href="#"><strong>Registre-se</strong></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="img">
+            <img src=".//images/side-image.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
