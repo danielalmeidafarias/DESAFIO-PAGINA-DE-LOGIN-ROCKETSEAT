@@ -1,3 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Login form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".//reset.css">
+</head>
+<body>
+    <div class="left-side">
+        <img class="logo-img" src=".//images/logo.svg" alt="">
+        <div class="login-box">
+            <div class="login-title">
+                <div class="title">
+                    <img class="title-img" src=".//images/log-in.svg" alt="">
+                    <h2>Faça seu login</h2>
+                </div>
+                <p>Entre com suas informações de cadastro.</p>
+            </div>
+            <div class="login-inputs">
+                <form action="POST">
+                    <label for="email-input">E-mail</label>
+                    <input type="email" name="email-input" id="email-input" placeholder="Digite seu e-mail">
+                    <label for="password-input">Senha</label>
+                    <input type="password" name="password-input" id="password-input" placeholder="Digite sua senha">
+                </form>
+            </div>
+            <div class="login-checks">
+                <div class="checkbox">
+                    <div class="checkbox-input">
+                        <input type="checkbox" name="reminder-check" id="reminder-check">
+                        <span>
+                            <svg width="20" height="20">
+                                <rect x="0" y="0" rx="8" ry="8" width="20" height="20"
+                                style="fill:#24221F; stroke:#868686;stroke-width:0.7;opacity:1" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p>Lembre-me</p>
+                </div>
+                <p><a href="#">Esqueci minha senha</a></p>
+            </div>
+            <div class="login-buttons">
+                <button class="button" type="submit">entrar</button>    
+                <p>Não tem uma conta? <a href="#"><strong>Registre-se</strong></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="img">
+            <img src=".//images/side-image.jpg" alt="">
+        </div>
+    </div>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    </style>
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
 
 :root {
@@ -89,28 +195,17 @@ body {
     background-color: transparent;
   }
 
-
   .logo-img {
     position: absolute;
     bottom: 35%;
-    right: 70px;
+    right: 35%;
   }
 
   .right-side {
     display: none;
   }
 
-  .login-inputs form .password-input span {
-    display: none;
-    
-  }
-
-  .login-inputs form .email-input span {
-    display: none;
-  }
-
-  }
-
+}
 
 @media(max-height: 600px){
   .logo-img {
@@ -158,35 +253,6 @@ body {
   flex-direction: column;
   width: 335px;
 }
-
-.login-inputs form .email-input .password-input {
-  display: flex;
-}
-
-.login-inputs form .password-input {
-  display: flex;
-}
-
-.login-inputs form .email-input input {
-  position: relative;
-}
-
-.login-inputs form .password-input input {
-  position: relative;
-}
-
-.login-inputs form .email-input span{
-  position: absolute;
-  left: 75%;
-  bottom: 305px;
-}
-
-.login-inputs form .password-input span {
-  position: absolute;
-  left: 75%;
-  bottom: 213px;
-}
-
 
 .login-inputs form input {
   width: 335px;
@@ -237,20 +303,19 @@ body {
   margin-bottom: 20px;
 }
 
-/* .login-checks span svg{
-  position: absolute;
+.login-checks span svg{
+  /* position: absolute; */
   left: 75px;
-  cursor: pointer;
-} */
+  /* cursor: pointer; */
+}
 
 .login-checks .checkbox {
   display: flex;
 }
 
 .checkbox-input input{
-  /* position: relative; */
+  position: relative;
   cursor: pointer;
-  color: transparent;
 }
 
 
@@ -282,7 +347,6 @@ body {
 }
 
 .login-buttons button {
-  cursor: pointer;
   width: 334px;
   height: 51px;
   border: none;
@@ -316,3 +380,6 @@ body {
   font-size: 14px;
   line-height: 21px;
 }
+    </style>
+</body>
+</html>

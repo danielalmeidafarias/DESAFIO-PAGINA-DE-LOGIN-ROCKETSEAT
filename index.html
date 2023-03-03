@@ -22,13 +22,30 @@
             <div class="login-inputs">
                 <form action="POST">
                     <label for="email-input">E-mail</label>
-                    <input type="email" name="email-input" id="email-input" placeholder="Digite seu e-mail">
+                    <div class="email-input">
+                        <input type="email" name="" id="" placeholder="Digite seu e-mail">
+                        <span><img src=".//images/mail.svg" alt=""></span>
+                    </div>
                     <label for="password-input">Senha</label>
-                    <input type="password" name="password-input" id="password-input" placeholder="Digite sua senha">
+                    <div class="password-input">
+                        <input type="password" name="" id="" placeholder="Digite sua senha">
+                        <span><img src=".//images/lock.svg" alt=""></span>
+                    </div>
                 </form>
             </div>
             <div class="login-checks">
-                <p><input type="checkbox" class="reminder-check" id="reminder-check">Lembre-me</p>
+                <div class="checkbox">
+                    <div class="checkbox-input">
+                        <input type="checkbox" name="reminder-check" id="reminder-check">
+                        <!-- <span>
+                            <svg width="20" height="20">
+                                <rect x="0" y="0" rx="8" ry="8" width="20" height="20"
+                                style="fill:#24221F; stroke:#868686;stroke-width:0.7;opacity:1" />
+                            </svg>
+                        </span> -->
+                    </div>
+                    <p>Lembre-me</p>
+                </div>
                 <p><a href="#">Esqueci minha senha</a></p>
             </div>
             <div class="login-buttons">
